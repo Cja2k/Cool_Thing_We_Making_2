@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Layout_Number" sid="613979921882547" static="0" type="number">1</variable>
+        <variable constant="0" name="Wait_Time_BF" sid="381365768734459" static="0" type="number">1</variable>
+        <event-group description="" sid="184032238948797" title="Any_Layout">
+            <sub-events>
+                <event-block sid="587773615922247">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="691507514151063" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="708912524925189" type="Button_B" />
+                    </actions>
+                </event-block>
+                <event-block sid="638577813556887">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="852074467653733" type="Mouse">
+                            <param id="0" name="Object">Button_B</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="404789179325981" type="Button_B">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="2" name="Stop" sid="520096536245450" type="Button_B" />
+                    </actions>
+                </event-block>
+                <event-block sid="619102320923608">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="122905741259708" type="Mouse">
+                            <param id="0" name="Object">Button_B</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="363030398919850" type="Button_B">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="889970414233966" type="Button_B" />
+                    </actions>
+                </event-block>
+                <event-block sid="203099483012031">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="429491797347800" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Button_B</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-43" name="Go to next/previous layout" sid="164628142637801" type="System">
+                            <param id="0" name="Which">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="669590659250328" type="System">
+                            <param id="0" name="Variable">Layout_Number</param>
+                            <param id="1" name="Value">(Layout_Number - 1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="947435859416711" title="Layout_1">
+            <sub-events>
+                <event-block sid="475850506987927">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="176705647599512" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="388614935496055" type="Button_1" />
+                        <action id="2" name="Stop" sid="883655415811352" type="Button_2" />
+                        <action id="2" name="Stop" sid="811385398356245" type="Button_3" />
+                        <action id="2" name="Stop" sid="488608787673814" type="Button_4" />
+                        <action id="2" name="Stop" sid="757998762390259" type="Button_5" />
+                    </actions>
+                </event-block>
+                <event-block sid="246506114469652">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="473221626715947" type="Mouse">
+                            <param id="0" name="Object">Button_1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="781334993768724" type="Button_1">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="2" name="Stop" sid="984050732494273" type="Button_1" />
+                    </actions>
+                </event-block>
+                <event-block sid="326011604567888">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="388741064509363" type="Mouse">
+                            <param id="0" name="Object">Button_1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="104493166211081" type="Button_1">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="489290540393865" type="Button_1" />
+                    </actions>
+                </event-block>
+                <event-block sid="974060996745237">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="386489689403468" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Button_1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="532496611372040" type="System">
+                            <param id="0" name="Layout">Layout 2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="244391682323117" type="System">
+                            <param id="0" name="Variable">Layout_Number</param>
+                            <param id="1" name="Value">(Layout_Number + 1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="231827972646453">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="622300588352580" type="Mouse">
+                            <param id="0" name="Object">Button_2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="700255751758689" type="Button_2">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="2" name="Stop" sid="256219601669886" type="Button_2" />
+                    </actions>
+                </event-block>
+                <event-block sid="995555673760512">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="858448822743957" type="Mouse">
+                            <param id="0" name="Object">Button_2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="810280754336857" type="Button_2">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="236324604521729" type="Button_2" />
+                    </actions>
+                </event-block>
+                <event-block sid="379540692262925">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="124646619752770" type="Mouse">
+                            <param id="0" name="Object">Button_3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="258312827241887" type="Button_3">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="2" name="Stop" sid="822237847394004" type="Button_3" />
+                    </actions>
+                </event-block>
+                <event-block sid="278224781664779">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="843852199249749" type="Mouse">
+                            <param id="0" name="Object">Button_3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="341569307027771" type="Button_3">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="294544750738149" type="Button_3" />
+                    </actions>
+                </event-block>
+                <event-block sid="350870731746392">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="821266240378562" type="Mouse">
+                            <param id="0" name="Object">Button_4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="831839525630140" type="Button_4">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="2" name="Stop" sid="814967605556212" type="Button_4" />
+                    </actions>
+                </event-block>
+                <event-block sid="770436331137238">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="740628828522252" type="Mouse">
+                            <param id="0" name="Object">Button_4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="460383651902109" type="Button_4">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="907026670354749" type="Button_4" />
+                    </actions>
+                </event-block>
+                <event-block sid="168755726016133">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="782112953828306" type="Mouse">
+                            <param id="0" name="Object">Button_5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="968895310975764" type="Button_5">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="2" name="Stop" sid="177683031494866" type="Button_5" />
+                    </actions>
+                </event-block>
+                <event-block sid="983536658825376">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="499221572636538" type="Mouse">
+                            <param id="0" name="Object">Button_5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="242435213247778" type="Button_5">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="574999447325606" type="Button_5" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="196579297072083" title="Layout_2">
+            <sub-events>
+                <event-block sid="148778686592970">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="539839259293799" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="831021368096116" type="Button_Fight" />
+                    </actions>
+                </event-block>
+                <event-block sid="492372857878546">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="582772084956723" type="Mouse">
+                            <param id="0" name="Object">Button_Fight</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="178002914220119" type="Button_Fight">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="2" name="Stop" sid="100398091627941" type="Button_Fight" />
+                    </actions>
+                </event-block>
+                <event-block sid="269945710911517">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="468465612604735" type="Mouse">
+                            <param id="0" name="Object">Button_Fight</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="362736081235044" type="Button_Fight">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="798748659350902" type="Button_Fight" />
+                    </actions>
+                </event-block>
+                <event-block sid="219415310145926">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="495281935213133" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Button_Fight</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="911705852147221" type="System">
+                            <param id="0" name="Layout">Layout 3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="734304372879517" type="System">
+                            <param id="0" name="Variable">Layout_Number</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="326479801595927" title="Layout_3">
+            <sub-events>
+                <event-block sid="527058946658883">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="510958308804865" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="719420825359451" type="ATK_Button" />
+                        <action id="2" name="Stop" sid="154667403906757" type="DEF_Button" />
+                        <action id="-9" name="Set value" sid="921525155617216" type="System">
+                            <param id="0" name="Variable">Wait_Time_BF</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="671021225482771">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="114430732592300" type="System">
+                            <param id="0" name="Variable">Wait_Time_BF</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-group description="" sid="772118349487187" title="ATK">
+                            <sub-events>
+                                <event-block sid="230612307605432">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="734358961014181" type="Mouse">
+                                            <param id="0" name="Object">ATK_Button</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="615665632798517" type="ATK_Button">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="2" name="Stop" sid="738436336460311" type="ATK_Button" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="814847797915075">
+                                    <conditions>
+                                        <condition id="7" inverted="1" name="Cursor is over object" sid="179235639633524" type="Mouse">
+                                            <param id="0" name="Object">ATK_Button</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="555395206548653" type="ATK_Button">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="2" name="Stop" sid="524429357692173" type="ATK_Button" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="237993733600400">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="726197709489072" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">ATK_Button</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="300481119749999" type="E_Health_Bar">
+                                            <param id="0" name="Instance variable">E_Health</param>
+                                            <param id="1" name="Value">random(10,25)</param>
+                                        </action>
+                                        <action id="3" name="Set progress" sid="120284611128440" type="E_Health_Bar">
+                                            <param id="0" name="Value">E_Health_Bar.E_Health</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="920888756147671" title="DEF">
+                            <sub-events>
+                                <event-block sid="264298217266120">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="396962791064702" type="Mouse">
+                                            <param id="0" name="Object">DEF_Button</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="172499182580260" type="DEF_Button">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="2" name="Stop" sid="174394843542668" type="DEF_Button" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="143770894249993">
+                                    <conditions>
+                                        <condition id="7" inverted="1" name="Cursor is over object" sid="638671764231215" type="Mouse">
+                                            <param id="0" name="Object">DEF_Button</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="170347688169953" type="DEF_Button">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="2" name="Stop" sid="238678581028995" type="DEF_Button" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="827316213614635">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="504394807311800" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">DEF_Button</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
