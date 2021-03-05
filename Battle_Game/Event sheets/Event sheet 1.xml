@@ -341,12 +341,15 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-12" name="Subtract from" sid="300481119749999" type="E_Health_Bar">
+                                        <action id="-10" name="Set value" sid="300481119749999" type="E_Health_Bar">
                                             <param id="0" name="Instance variable">E_Health</param>
-                                            <param id="1" name="Value">random(10,25)</param>
+                                            <param id="1" name="Value">max(0,Self.E_Health-random(10,25))</param>
                                         </action>
                                         <action id="3" name="Set progress" sid="120284611128440" type="E_Health_Bar">
                                             <param id="0" name="Value">E_Health_Bar.E_Health</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="414272941745456" type="E_Health_Text_Number">
+                                            <param id="0" name="Text">ceil(E_Health_Bar.E_Health)</param>
                                         </action>
                                     </actions>
                                 </event-block>

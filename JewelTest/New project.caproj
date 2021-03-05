@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1dr93xweeble</unique-id>
+    <saved-with-version>27900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors />
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>256</width>
+        <height>448</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Low quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">Low quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Jewel" sid="680177307319230">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Jewel0" pingpong="0" repeatcount="1" repeatto="0" sid="801448325431250" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Jewel1" pingpong="0" repeatcount="1" repeatto="0" sid="131563125711341" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Jewel2" pingpong="0" repeatcount="1" repeatto="0" sid="791414366277288" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Jewel3" pingpong="0" repeatcount="1" repeatto="0" sid="987830385488783" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Barrier" sid="482971876981316">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="JewelSpawner" sid="269160158635881">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="936708439334004" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="738098053890613">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Function" sid="907693073963264">
+            <plugin id="Function" />
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Jewel1" plugin-id="Sprite" sid="654427698246731">
+            <members>
+                <member>Jewel</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="Awake1" sid="668938173193761" type="number" />
+                <instance-variable name="Speed1" sid="260012554335178" type="number" />
+            </instance-variables>
+        </family>
+        <family name="Jewel2" plugin-id="Sprite" sid="262499950524689">
+            <members>
+                <member>Jewel</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="11" />
+        <global-instance type="Function" uid="12" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

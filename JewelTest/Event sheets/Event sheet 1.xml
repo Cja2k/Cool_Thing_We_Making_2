@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="1" name="ACCELERATION" sid="106364068053581" static="0" type="number">0.125</variable>
+        <variable constant="1" name="JEWELSIZE" sid="874321239319591" static="0" type="number">32</variable>
+        <variable constant="1" name="MAXSPEED" sid="632941163784274" static="0" type="number">8</variable>
+        <variable constant="0" name="Full" sid="811660197318593" static="0" type="number">0</variable>
+        <event-group description="" sid="246591968534614" title="MAIN">
+            <sub-events>
+                <event-block sid="271018813147754">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="583776994046350" type="System">
+                            <param id="0" name="Object">JewelSpawner</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <variable constant="0" name="Spawn" sid="257588695180933" static="0" type="number">1</variable>
+                        <event-block sid="633887314082217">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="180141575549860" type="System">
+                                    <param id="0" name="Variable">Spawn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="615071629406615" type="JewelSpawner">
+                                    <param id="0" name="Object">Jewel</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="916557922999799" type="Jewel">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="X co-ordinate">JewelSpawner.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="248943029374987" type="System">
+                                    <param id="0" name="Variable">Spawn</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="313597717200112">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="442701074912031" type="System">
+                                    <param id="0" name="Variable">Spawn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="735629737671122" type="System">
+                                    <param id="0" name="Object to create">Jewel</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">JewelSpawner.X</param>
+                                    <param id="3" name="Y">JewelSpawner.Y</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="667663947737026" type="Jewel">
+                                    <param id="0" name="Instance variable">Awake1</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="495408790156158" type="Jewel">
+                                    <param id="0" name="Instance variable">Speed1</param>
+                                    <param id="1" name="Value">MAXSPEED/2</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="479807965857689" type="Jewel">
+                                    <param id="0" name="Animation">&quot;Jewel&quot;&amp;str(floor(random(0,4)))</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="158961640489132">
+                    <conditions>
+                        <condition id="-24" name="For Each (ordered)" sid="582302101469392" type="System">
+                            <param id="0" name="Object">Jewel1</param>
+                            <param id="1" name="Expression">Jewel1.Y</param>
+                            <param id="2" name="Order">1</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="428337889423978" type="Jewel1">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">416</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="715629909820349">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="991847691884483" type="Jewel1">
+                                    <param id="0" name="Instance variable">Awake1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="WakeUp" sid="762398275284684" static="0" type="number">1</variable>
+                                <event-block sid="978556819581672">
+                                    <conditions>
+                                        <condition id="9" name="Is overlapping at offset" sid="459929468921535" type="Jewel1">
+                                            <param id="0" name="Object">Jewel2</param>
+                                            <param id="1" name="Offset X">0</param>
+                                            <param id="2" name="Offset Y">1</param>
+                                        </condition>
+                                        <condition id="-1" name="Compare X" sid="963621623657058" type="Jewel2">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="X co-ordinate">Jewel1.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="548689599268295" type="System">
+                                            <param id="0" name="Variable">WakeUp</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="304084979739387">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="797835195619603" type="System">
+                                            <param id="0" name="Variable">WakeUp</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="507184617168545" type="Jewel1">
+                                            <param id="0" name="Instance variable">Awake1</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="756083795412168">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="929003598767505" type="Jewel1">
+                                    <param id="0" name="Instance variable">Awake1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="604776269814168">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="543816846982145" type="Jewel1">
+                                            <param id="0" name="Instance variable">Speed1</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">MAXSPEED</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="812890542085226" type="Jewel1">
+                                            <param id="0" name="Instance variable">Speed1</param>
+                                            <param id="1" name="Value">min(Self.Speed1+ACCELERATION,MAXSPEED)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="840480333151778">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="619167617087642" type="Jewel1">
+                                            <param id="0" name="Y">Self.Y+Self.Speed1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="943227535553796">
+                                    <conditions>
+                                        <condition id="1" name="Is overlapping another object" sid="394088891534761" type="Jewel1">
+                                            <param id="0" name="Object">Jewel2</param>
+                                        </condition>
+                                        <condition id="-1" name="Compare X" sid="581990461565162" type="Jewel2">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="X co-ordinate">Jewel1.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="424658094832364" type="Jewel1">
+                                            <param id="0" name="Instance variable">Speed1</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="714337778717263" type="Jewel1">
+                                            <param id="0" name="Y">Jewel2.Y-JEWELSIZE</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="387967890012568" type="Jewel1">
+                                            <param id="0" name="Instance variable">Awake1</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="735132921782016">
+                                    <conditions>
+                                        <condition id="-2" name="Compare Y" sid="277334108258409" type="Jewel1">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="Y co-ordinate">416</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="640150417288413" type="Jewel1">
+                                            <param id="0" name="Y">416</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="957812294514022" type="Jewel1">
+                                            <param id="0" name="Instance variable">Awake1</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="102212122176387">
+            <conditions>
+                <condition id="2" name="Mouse button is down" sid="512787333890842" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+                <condition id="7" name="Cursor is over object" sid="355133086141663" type="Mouse">
+                    <param id="0" name="Object">Jewel2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="318777955306427" type="Jewel2" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
