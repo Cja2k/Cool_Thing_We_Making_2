@@ -318,7 +318,6 @@
                                         <action id="5" name="Set frame" sid="615665632798517" type="ATK_Button">
                                             <param id="0" name="Frame number">1</param>
                                         </action>
-                                        <action id="2" name="Stop" sid="738436336460311" type="ATK_Button" />
                                     </actions>
                                 </event-block>
                                 <event-block sid="814847797915075">
@@ -331,7 +330,6 @@
                                         <action id="5" name="Set frame" sid="555395206548653" type="ATK_Button">
                                             <param id="0" name="Frame number">0</param>
                                         </action>
-                                        <action id="2" name="Stop" sid="524429357692173" type="ATK_Button" />
                                     </actions>
                                 </event-block>
                                 <event-block sid="237993733600400">
@@ -366,7 +364,6 @@
                                         <action id="5" name="Set frame" sid="172499182580260" type="DEF_Button">
                                             <param id="0" name="Frame number">1</param>
                                         </action>
-                                        <action id="2" name="Stop" sid="174394843542668" type="DEF_Button" />
                                     </actions>
                                 </event-block>
                                 <event-block sid="143770894249993">
@@ -379,7 +376,6 @@
                                         <action id="5" name="Set frame" sid="170347688169953" type="DEF_Button">
                                             <param id="0" name="Frame number">0</param>
                                         </action>
-                                        <action id="2" name="Stop" sid="238678581028995" type="DEF_Button" />
                                     </actions>
                                 </event-block>
                                 <event-block sid="827316213614635">
